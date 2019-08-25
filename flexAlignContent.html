@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+    body {
+      background-color: #F5F5F5;
+      color: #555;
+      font-size: 1.1em;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    
+    .container {
+      margin: 150px auto;
+      max-width: 840px;
+      min-height: 600px;
+      padding: 20px;
+      -webkit-display: -webkit-box;
+      -webkit-display: -webkit-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      background-color: #594255;
+    }
+    
+    .item {
+      background-color: #fff;
+      width: 50px;
+      height: 50px;
+      margin: 2px;
+      text-align: center;
+      line-height: 50;
+      font-weight: bold;
+      font-family: sans-serif;
+      font-size: 5em;
+      color: #594255;
+    }
+    
+    .big {
+      width: 150px;
+    }
+    
+    .controls {
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      line-height: 150%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      border: 1px solid #ddd;
+    }
+        </style>
+    </head>
+    <body>
+<div class="container" id="container">
+  <div class="item big">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item big">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+  <div class="item">7</div>
+  <div class="item big">8</div>
+  <div class="item">9</div>
+  <div class="item big">10</div>
+  <div class="item big">11</div>
+  <div class="item big">12</div>
+  <div class="item big">13</div>
+</div>
+<div class="controls">
+  <input type="radio" name="align-content" id="flex-start"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.webkitAlignContent = 'flex-start';
+                  container.style.alignContent = 'flex-start';
+                  ">
+  <label for="flex-start">align-content: flex-start;</label>
+  <br>
+  <input type="radio" name="align-content" id="flex-end"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.webkitAlignContent = 'flex-end';
+                  container.style.alignContent = 'flex-end'
+                  ">
+  <label for="flex-end">align-content: flex-end;</label>
+  <br>
+  <input type="radio" name="align-content" id="center"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.webkitAlignContent = 'center';
+                  container.style.alignContent = 'center'
+                  ">
+  <label for="center">align-content: center;</label>
+  <br>
+  <input type="radio" name="align-content" id="space-between"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.webkitAlignContent = 'space-between';
+                  container.style.alignContent = 'space-between'
+                  ">
+  <label for="space-between">align-content: space-between;</label>
+  <br>
+  <input type="radio" name="align-content" id="space-around"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.webkitAlignContent = 'space-around';
+                  container.style.alignContent = 'space-around'
+                  ">
+  <label for="space-around">align-content: space-around;</label>
+  <br>
+  <input type="radio" name="align-content" id="stretch"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.webkitAlignContent = 'stretch';
+                  container.style.alignContent = 'stretch'
+                  " checked>
+  <label for="stretch">align-content: stretch;</label>
+</div>
+    </body>
+</html>
+
+

@@ -574,4 +574,28 @@ css flexbox{
     
     file:flexjustifyContent.html
 }
+              
                 
+.align-items{
+    desc:        align-items in the cross-axis
+    flex-start:  items are packed towards  cross start
+    flex-end:    packed towards cross end
+    center :     packed toward center of line
+    baseline :   aligned such that bases of the text align
+    stretch:     items go from cross start to cross end
+    
+    file: flexAlignItems.html
+}
+
+
+.align-content{
+    signature: flex-start | flex-end | center | space-between | space-around | stretch
+    flex-start:eveything sent to cross axis top
+    flex-end:  sent to cross axis bottom;
+    center:everything  sent to the vertical of the container
+    space-between: flex items are evenly distrubted, with one snug to the top and another sng to the bottom
+    space-around:  same as last time but only haplp spaces;
+    stretch: default lines stretrch to take the remaining space if the value is not side of the flex item it eqals to flex start however new cross axis begin by how many are generated and they start at (x/flexboLength)/flexBoxLEngth
+    file:flexAlignContent.html
+    
+}
