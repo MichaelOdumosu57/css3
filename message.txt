@@ -1,1 +1,1 @@
-learned about naming grid rows and grid columns as well as grid tracks and cells
+learned about grid Areas allowing you to get granular in grid selection, there is a grid gap but is seems to be insignificant on default

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: 150px 150px 150px;
+                grid-template-rows: 150px 150px;
+                grid-template-areas: "a b b"
+                                     "a b b";
+            }
+            
+            .item-1 {
+                grid-area:a;
+                margin:1px solid black;
+                border:1px solid black;
+                padding:1px solid black;
+            }
+            
+            .item-2 {
+                grid-area:b;
+                margin:1px solid black;
+                border:1px solid black;
+                padding:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ='grid-container'>
+            <div class = 'item-1'></div>
+            <div class = 'item-2'></div>
+        </div>
+    </body>
+</html>

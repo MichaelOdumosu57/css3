@@ -57,7 +57,14 @@ css grid{}
     seperating-Grid-Track: with grid-row-gap and grid-column-gap properties
     grid-Cell: space btwn 2 adj row and column
     
-    file
+    
+}
+
+#grid-Areas{
+    
+    def: made of 1 more or cells, you can refer to it with a grid-template-areas property then it can be refered using grid-areas property
+    
+    file:gridAreas.html
 }
 
 
