@@ -1,1 +1,1 @@
-learned about grid Areas allowing you to get granular in grid selection, there is a grid gap but is seems to be insignificant on default
+learned about the muiltple ways you can generate your grid with the grid template properties

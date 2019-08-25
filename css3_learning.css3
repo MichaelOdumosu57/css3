@@ -8,6 +8,8 @@ tag{} is for heading
 
 .{} is for more subsectinon
 
+:{} is for more subsection
+
 @{} are tips
 
 
@@ -65,6 +67,70 @@ css grid{}
     def: made of 1 more or cells, you can refer to it with a grid-template-areas property then it can be refered using grid-areas property
     
     file:gridAreas.html
+     @{} a grid gutter is any gap betwen cells and tracks and areas are grid row gutters
 }
 
 
+
+grid container defining grid sturcture{
+    formatting context: ONLY APPLIES TO CHILD ELEMENTS nothing beyong
+    
+    file:noGrandKids.html
+
+}
+
+#ExplicitAndImplicitGrid{
+    
+    explicit-def: what you define using css templates
+    implicit-def: if something exceeds the range the browser will create an implicit grid to help you out use
+            grid-auto to deal with implicit columns
+    file: explicitAndImplicit.html
+    
+    @{ } this seems to work on colums only it only works in that eample
+    @{ } the tracks not implicitly filled are explicitly filled
+}
+
+#Grid-Container-Properties{}
+
+.grid-template-columns-rows{
+    
+    signature :     grid-template-colums:  none | <track-list> | <auto-track-list>
+                    grid-template-rows:  none | <track-list> | <auto-track-list>
+    none:           no explicit grid tracks are created
+    <track-list>:   specify size of each grid track
+                        [ <line-names>? [ <track-size> | <track-repeat> ]  ]+ <line-names>?
+ 
+    <track-size>: 3 ways to define
+    
+    :track-breadth{} : a CSS length px % em
+                        flexible length fr  a portion of the remaining free space with the flex factor
+                        keywords
+                min-content: smallest szie possible no overlfow
+                max-content: minimun size to fit content
+                
+    
+    
+    :minmax{} :  <inflexible-breadth> , <track-breadth>
+                a range defined by the minmax fn, where first value is min and 2nd is maximun
+    @{} to use minmax minmax(75px,120px)
+    
+   
+    
+    
+    :fit-content( length-percentage)
+    
+    <track-repeat>: we have repeating track size done with repeat()
+    
+    signature: repeat ( [<positive-integer> ], [ <line-names>? <track-size> ]+ <line-names>? )
+    
+    pattern: 30px narrow column n 100px wide column repeated 4 times
+    
+    ex1: 30px 100px 30px 100px 30px 100px 30px 100px
+    ex2: repeat(4, 30px 100px)
+    
+    
+    file:trackBreadth1.html
+    
+    <line-name>
+
+}

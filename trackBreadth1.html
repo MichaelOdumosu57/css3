@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                width:750px;
+                height:100px;
+                grid-template-columns: 150px 1fr 2fr;
+                grid-template-rows: 100px 100px
+            }
+            
+            .item {
+                grid-column:2;
+                
+            }
+            
+            .grid-container-2 {
+                display: grid;
+                width:750px;
+                height:100px;
+                grid-template-columns: min-content max-content auto;
+                grid-template-rows: minmax(119px,120px)
+            }
+            
+            
+            .grid-container-3 {
+                display: grid;
+                width:750px;
+                height:100px;
+                grid-template-columns: repeat(2, 30px 100px);
+                grid-template-rows: minmax(119px,120px)
+            }
+            
+            .item-2 {
+                grid-column:1;
+                
+            }
+            
+            .item-3 {
+                grid-column:2;
+                
+            }
+            
+            .item-4 {
+                grid-column:3;
+                
+            }
+            
+            .
+        </style>
+    </head>
+    <body>
+        <div class ='grid-container'>
+            <div class = 'item'>
+            </div>
+        </div>
+        <div class ='grid-container-2'>
+            <div class = 'item-2'>The cat jumped over the moon</div>
+            <div class = 'item-3'>The cat jumped over the moon</div>
+            <div class = 'item-4'>The cat jumped over the moon</div>
+        </div>
+        <div class ='grid-container-3'>
+            
+        </div>
+    </body>
+</html>
