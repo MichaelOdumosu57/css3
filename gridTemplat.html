@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display:grid;
+                height:100px;
+                width:500px;
+                grid-template: [header-top] "a a a" 1fr [header-bottom][main-top] "b b b" 1fr [main-bottom] / auto 1fr auto;
+            }
+            
+/*is equal to*/
+            .grid-container-2 {
+                display:grid;
+                height:100px;
+                width:500px;
+                grid-template-areas:  "a a a"
+                                      "b b b" ;
+                grid-template-rows:    [header-top] 1fr [header-bottom main-top] 1fr [main-bottom];
+                grid-template-columns: auto 1fr auto;
+            }
+
+            
+            .item-1 {
+                grid-area:a;
+                margin:1px solid black;
+                border:1px solid black;
+                padding:1px solid black;
+            }
+            
+            .item-2 {
+                grid-area:b;
+                margin:1px solid black;
+                border:1px solid black;
+                padding:1px solid black;
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class ='grid-container-2'>
+            <div class = 'item-1'></div>
+            <div class = 'item-2'></div>
+        </div>
+    </body>
+</html>
+
+

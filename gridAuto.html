@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display:grid;
+                height:100px;
+                width:500px;
+                grid-template-rows:    100px 120px;
+                grid-template-columns: 100px 120px;
+                grid-column-gap: 23px;
+                grid-row-gap: 23px;
+                grid-auto-flow:column
+                /*change from column to row to see how the items appear*/
+            }
+            
+            .grid-container-2 {
+                display:grid;
+                height:100px;
+                width:500px;
+                grid-template-rows:    100px 120px 100px 120px;
+                grid-template-columns: 100px 120px 100px 120px;
+                grid-template-areas:  "logo    stats"
+                                      "score   stats"
+                                      "board   board"
+                                      "...     controls";
+                grid-column-gap: 23px;
+                grid-row-gap: 23px;
+                grid-auto-flow:dense
+                /*change from column to row to see how the items appear*/
+            }
+        .row-1{
+            grid-row:1
+            
+        }
+        
+        .row-2{
+            grid-row:2
+            
+        }
+        
+        .row-3{
+            grid-row:3
+        }
+        
+        
+        .column-1{
+            grid-column:1
+            
+        }
+        
+        .column-2{
+            grid-column:2
+            
+        }
+        
+        .column-3{
+            grid-column:3;
+            grid-row:3;
+        }
+        
+        .column-3{
+            grid-column:3;
+            grid-row:3;
+        }
+         
+
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class ='grid-container'>
+            <div class = 'item-1'></div>
+            <div class = 'item-2'></div>
+        </div>
+        <div class ='grid-container-2'>
+            <div class = 'item-1'></div>
+            <div class = 'item-2'></div>
+            <div class = 'column-3'></div>
+            <div class = 'item-2'></div>
+        </div>
+    </body>
+</html>
+
+

@@ -1,1 +1,1 @@
-understood grid areas better
+learned about the complex synatax of the grid container property, the most impt is how you can initiate direction with grid-auto-flow

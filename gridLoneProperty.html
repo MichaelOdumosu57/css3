@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            .grid-1 {
+                display:grid;
+                grid:50px 75px / auto-flow 70px;
+            }
+            
+            
+            /*is also equal to*/
+            
+            .grid-1 {
+                display:grid;
+                grid-template-rows:50px 75px;
+                grid-template-columns: none;
+                grid-auto-rows:auto;
+                grid-auto-columns:70px;
+                grid-auto-flow:column;
+                grid-column-gap:0;
+                grid-row-gap: 0;
+            }
+            .grid-a1{
+                grid-column:1
+            }
+            
+            .grid-a2{
+                grid-column:3
+            }
+            
+       
+            .grid-2 {
+                display:grid;
+                grid:auto-flow  30px/ 70px 100px;
+            }
+            
+             /*is also equal to*/
+             
+            .grid-2 {
+                display:grid;
+                grid-template-rows:none;
+                grid-template-columns: 70px 100px;
+                grid-auto-rows:30p;
+                grid-auto-columns:nonde;
+                grid-auto-flow:column;
+                grid-column-gap:0;
+                grid-row-gap: 0;
+            }
+                        
+            
+            .grid-b1{
+                grid-row:1
+            }
+            
+            .grid-b2{
+                grid-row:3
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class ='grid-1'>
+            <div class = 'grid-a1'></div>
+            <div class = 'grid-a2'></div>
+        </div>
+        <div class ='grid-2'>
+            <div class = 'grid-b1'></div>
+            <div class = 'grid-b2'></div>
+        </div>
+    </body>
+</html>
+
+

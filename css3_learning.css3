@@ -170,3 +170,77 @@ grid container defining grid sturcture{
     file:gridTemplateArea.html
     
 }
+
+
+
+.grid-template {
+    
+    grid-template:  shorthand for declairing tempalte columns rows and areas
+    signature      : none | [ <'grid-template-rows'> / <'grid-template-colums'> | <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ] ]
+    you can use   <'grid-template-rows'> / <'grid-template-colums'> or
+     <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list>
+     
+     ex
+        grid-template : [header-top] "a a a" [header-bottom][main-top] "b b b" 1fr [main-bottom] / auto 1fr auto;
+       
+        grid-template-areas: "a a a"
+                            "b b b";
+        grid-template-rows:[header-top] auto [header-bottom main-top] 1fr [main-bottom]
+        grid-template-columns: auto 1fr auto:
+        
+    file:gridTemplate.html
+    
+}
+
+
+.grid-gap{
+    
+    grid-gap: grid-column-gap and grid-row-gap css lengths
+    desc, the space between grid tracks the never appper at the edge of the grid
+    file:gridGap.html
+    
+    grid-gap :
+    signature : <'grid-row-gap'> <'grid-column-gap'>
+    
+}
+
+.grid-auto{
+    
+    grid-auto-columns:  <track-size>+
+    grid-auto-rows:  <track-size>+
+    see above
+    
+    grid-auto-flow:[ row | column ] | dense
+    row: extends the grid to fill more rows
+    column: extends grid to fill columms
+    dense: the algorithm will attempt to fit small grid items  that appear later eariler in the grid, getting rid of holes
+    
+    file:gridAuto.html
+    
+}
+
+
+.grid{
+    
+    signature: <'grid-template'> | <'grid-template-rows'> / [auto-flow && dense? ] <'grid-auto-columns'>? | [auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>
+    desc: shorthand that sets all explicit and implicit grid pros in a single declaration and destroys any gutter properites
+    it affects
+    
+    grid-template-rows:none
+    grid-template-columns:none
+    grid-template-areas:none
+    grid-auto-rows: auto
+    grid-auto-columns: auto
+    grid-auto-flow: row
+    grid-column-gap: 0
+    grid-row-gap: 0
+    
+    
+    <'grid-template-rows'> / [auto-flow && dense? ] <'grid-auto-columns'>?
+    explicitly set grid row tracks, implicity for auto-repeat for grid column
+    
+    @{ } when you remove the grid-auto-columns in the 2nd signaure, the the default is auto
+    
+    file gridLoneProperty.html
+    
+}
