@@ -34,16 +34,30 @@ css grid{}
     desc: hoz and ver lines for grid structure basis, refered by numerical index which starts at 1
     negative index: to accss the last grid item up use -1
 
-file:simpleGrid.html
-use the element selector to see how the grid is working
-
-its responsive to a point so you have to be smart when working with this
+    file:simpleGrid.html
+    use the element selector to see how the grid is working
+    
+    @{}its responsive to a point so you have to be smart when working with this
 
     
 }
 
 
+.grid-Lines-Naming{
+    
+    naming: can be down in grid-template-columns & grid-template-rows property
+    file:namedGridLines.html
+    
+    @{} when it have the same grid line naming twice grid API matches the first item it sees
+}
 
 
+#grid-Tracks-And-Cells{
+    grid-Track: the space between 2 adjacent lines, aka rows n columns,
+    seperating-Grid-Track: with grid-row-gap and grid-column-gap properties
+    grid-Cell: space btwn 2 adj row and column
+    
+    file
+}
 
 

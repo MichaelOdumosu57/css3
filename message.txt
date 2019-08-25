@@ -1,1 +1,1 @@
-learned about the horizontal and vertical for the grid, you get to specify how large the rows and columns get
+learned about naming grid rows and grid columns as well as grid tracks and cells

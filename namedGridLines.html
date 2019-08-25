@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: 150px [col-foo] 150px 150px [col-bar] 150px[col-bar];
+                grid-template-rows: 150px [row-foo] 150px[row-bar];
+                margin:1px  solid black;
+            }
+            
+            .item {
+                grid-column-start: col-foo;
+                grid-column-end: col-bar;
+                grid-row-start: row-foo;
+                grid-row-end: row-bar;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ='grid-container'>
+            <div class = 'item'></div>
+        </div>
+    </body>
+</html>
