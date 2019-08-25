@@ -1,1 +1,1 @@
-learned about the complex synatax of the grid container property, the most impt is how you can initiate direction with grid-auto-flow
+learned about order placement and positiong of grid items, they allow you to do alot dont put grid elements with position:absolute maily what happens is your children dont fill up the track as they are supposed to

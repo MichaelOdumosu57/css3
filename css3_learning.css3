@@ -86,8 +86,8 @@ grid container defining grid sturcture{
             grid-auto to deal with implicit columns
     file: explicitAndImplicit.html
     
-    @{ } this seems to work on colums only it only works in that eample
-    @{ } the tracks not implicitly filled are explicitly filled
+    
+    @{ } the tracks that are not  explicitly  filled are implicitly  filled
 }
 
 #Grid-Container-Properties{}
@@ -196,10 +196,10 @@ grid container defining grid sturcture{
 .grid-gap{
     
     grid-gap: grid-column-gap and grid-row-gap css lengths
-    desc, the space between grid tracks the never appper at the edge of the grid
+    desc:  the space between grid tracks the never appper at the edge of the grid
     file:gridGap.html
     
-    grid-gap :
+    grid-gap : shorthand
     signature : <'grid-row-gap'> <'grid-column-gap'>
     
 }
@@ -244,3 +244,69 @@ grid container defining grid sturcture{
     file gridLoneProperty.html
     
 }
+
+
+#Grid-Items-Placing-Items-in-the-Grid{
+    
+    synopsis:  where a grid item ends up depends on position and span
+    position: location on grid, set by CSS or auto-placement;
+    span: determines how many tracks an item will take default is the same as a grid cell
+    how-browser-does-it: 'grid-row-start' line
+                         'grid-row-end' line
+                         'row span'
+                         'grid-column-start' line
+                         'grid-column-end 'line
+                         'grid-column span'
+    @{} you just need 2 from column or row for the browser to imply the 3rd
+    
+    @{} 1 / span 2; is to have the column or row start at a certain range
+    
+    common-sense: it will swap if end is less than start,
+                    ignore any span after the first,
+                    named line spans will be treated as span 1
+                    
+    file:gridItemPosition.html
+                        
+}
+
+.Ordering-Grid-Items{
+    order: if they are explicitly specified grid items are going to go somewhere;
+    source-order: when we didnt have grid we needed this
+    
+    @{} site advice, try to get main content first, although there are site contents later
+    
+    advantages: with CSS Grid we can do more
+    
+    ex:
+    <body>
+      <header>...</header>
+      <main>...</main>
+      <nav>...</nav>
+      <aside>...</aside>
+      <footer>...</footer>
+    </body>
+    
+    with css grid, source order doesnt matter, element go where they are supposed to go
+    
+    order: only visual order is affected, speech and hotkeys still follow document source order
+}
+
+.Overlapping-Grid-Items{
+    
+    features: multiple items can be put in the same container
+    z-index: no z-index last on top , and on default they cascade horizontally;
+    
+    
+    
+    other css: using justify-self align self and z-index we can make cool effects
+    
+    @{} for d e f change the z-index to see the reactions
+    file:overlapGrid.html
+}
+
+
+.Absolutely-Positioned-Grid-Items{
+    position : you want to use position:relative; so the grid can be in control of placement
+    position : when this is absolute, it means that the element might not fill up grid cells;
+}
+
