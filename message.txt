@@ -1,0 +1,1 @@
+learned about the horizontal and vertical for the grid, you get to specify how large the rows and columns get

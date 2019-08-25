@@ -1,0 +1,49 @@
+learning css3
+
+contents
+
+tag{} is for heading
+
+#{} is for subsection
+
+.{} is for more subsectinon
+
+@{} are tips
+
+
+
+addi ass a css property is when you dont know how to descible what yr learning
+
+
+https://tympanus.net/codrops/css_reference/grid/
+
+https://tympanus.net/codrops/css_reference/flexbox/
+
+
+
+
+css grid{}
+
+
+
+#concepts{
+    document-dirrection: HTML document.dir is from ltr if we change to rtl layout assignments get affected like flexbox we have the grid container and grid items
+}
+
+#grid-Lines{
+    desc: hoz and ver lines for grid structure basis, refered by numerical index which starts at 1
+    negative index: to accss the last grid item up use -1
+
+file:simpleGrid.html
+use the element selector to see how the grid is working
+
+its responsive to a point so you have to be smart when working with this
+
+    
+}
+
+
+
+
+
+
