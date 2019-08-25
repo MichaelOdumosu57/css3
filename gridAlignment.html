@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3,[foo] 150px [bar] 75px) ;
+                grid-template-rows:repeat(5, [foo] 150px [bar] 75px);
+                grid-auto-flow:column;
+            }
+            
+            .grid_item {
+                background-color:blue;
+                height:150px;
+                width:160px;
+            }
+            
+            .grid_helper {
+                background-color:red;
+                height:150px;
+                width:160px;
+            }
+            
+            
+            .a {
+                grid-area: 2/3/7/6;
+                writing-mode:horizontal-tb;
+                
+            }
+            
+            .b {
+                /*grid-area: 2/3/8/7;*/
+                writing-mode:vertical-rl;
+                background-color:red;
+                
+            }
+
+            .c {
+                grid-area: 2/3/7/6;
+                writing-mode:horizontal-bt;
+                
+            }
+            
+            .d {
+                /*grid-area: 1/1/2/3;*/
+                writing-mode:vertical-lr;
+                background-color:blue;
+                
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+          <div class="grid__item a"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__item b"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__helper b"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__item c"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__item d"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__helper d"><div class=""></div>Here is some text. Text is inline.</div>
+
+        </div>
+    </body>
+</html>
+
+

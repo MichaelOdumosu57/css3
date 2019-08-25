@@ -310,3 +310,67 @@ grid container defining grid sturcture{
     position : when this is absolute, it means that the element might not fill up grid cells;
 }
 
+
+
+#Properties-Related-to-Grid-Items{
+    grid-column-start: auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]
+    grid-column-end: auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]
+    grid-row-start: auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]
+    grid-row-end: auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]
+    
+    
+    auto: default span of 1 placed to fill up the grid
+    <custom-ident> : numerical index of grid line or a named grid line
+    [ <custom-ident>? ] :  just a name for a line
+    [ <integer> && <custom-ident>? ]  : so grids can have areas where naming is repeeated so like every 2 u have foo and bar to deal with it a grid of 6 rows,  when you use this signauter, everywhere in the grid can be rerefend as [num] [name] and so on, cannot start at 0
+    
+    @{} remember to name the in the tempalte first
+    
+    [ span && [ <positive-integer> || <custom-ident> ] ] : allows for span then choose how large it will be interger defualt is one
+    file:gridItemProperties.html
+}
+
+
+.grid-row.grid-column{
+    desc: short hand for start and end
+    signature:  <grid-line> [ / <grid-line> ]?
+    
+    
+}
+
+.grid-area{
+    desc: short hand for all 4 start and end
+    signature:  grid-area: <grid-line> [ / <grid-line> ]{0,3}
+    
+    row-start column-start row-end column-end
+    file: gridAreaPlacement.html
+}
+
+#Grid-Alignment{
+    direction: the text flow is from left to right the visual block-view is from top to bottom;
+    column-axis:  the block-axis
+    row-axis: text-axis
+    
+    it depends on the writing-mode property
+    file:gridAlignment.html
+    
+}
+
+#Properties-Grid-Alignment{}
+
+.justify-content{
+    
+    @{} assunming a horizontal-tb position
+    
+    signature: justify-content: center | start | end | space-between | space-around | space-evenly
+    
+    center:         Centers the grid within the grid container along the row-axis
+    start :         moves grid to start of the container
+    end   :         moves grid to end of container
+    space-around:   each grid track has equal space around it, but a half space at th edges
+    space-between:  distributes evenly first row on left edge and last at the right edge
+    @{} if the spacing is too small, then act like a regular grid
+    space-evenly:   makes sure that everything has equal spacing
+    
+    file:justifyContent.html
+}

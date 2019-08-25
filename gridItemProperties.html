@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3,[foo] 150px [bar] 75px) ;
+                grid-template-rows: [foo] 150px [bar] 75px;
+            }
+            
+            .a { grid-column-start: 1 bar; grid-column-end: 3 foo; }
+            .b { grid-column-start: 1 bar; }
+            .c { grid-column-start: -1 foo; }
+            
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+          <div class="grid__item a"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__item b"><div class=""></div>Here is some text. Text is inline.</div>
+          <div class="grid__item c"><div class=""></div>Here is some text. Text is inline.</div>
+        </div>
+    </body>
+</html>
+
+

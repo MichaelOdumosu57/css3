@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3,[foo] 150px [bar] 75px) ;
+                grid-template-rows:repeat(5, [foo] 150px [bar] 75px);
+                justify-content:space-between;
+            }
+            
+            .a { grid-area: 2/3/7/6 }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="grid-container" style ="width:1000px; height:800px;">
+          <div class="grid__item a"><div class=""></div>Here is some text. Text is inline.</div>
+
+        </div>
+    </body>
+</html>
+
+

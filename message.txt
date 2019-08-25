@@ -1,1 +1,1 @@
-learned about order placement and positiong of grid items, they allow you to do alot dont put grid elements with position:absolute maily what happens is your children dont fill up the track as they are supposed to
+learned about grid alignment and how you can decide how your elements are layed out in the document or how text will be read, justify-content most deals with how grid tracks are spaced in the horizontal
