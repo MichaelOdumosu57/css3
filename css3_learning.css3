@@ -114,9 +114,6 @@ grid container defining grid sturcture{
                 a range defined by the minmax fn, where first value is min and 2nd is maximun
     @{} to use minmax minmax(75px,120px)
     
-   
-    
-    
     :fit-content( length-percentage)
     
     <track-repeat>: we have repeating track size done with repeat()
@@ -131,6 +128,45 @@ grid container defining grid sturcture{
     
     file:trackBreadth1.html
     
-    <line-name>
+    <line-names> : for creating complicated webapp grids
+    refer to namedGridLines.html
+    
+    
+    
+    
+    <auto-track-list> optional
+    signautre [ <line-names>?   [ <fixed-size> | <fixed-repeat> ] ]* <line-names>? <auto-repeat>
+    
+    
+    <fixed-size>
+    
+    <fixed-breadth> any css length
+    minmax
+    
+    @{} if you have a problem with using a value, the fn probably does not like its type
+    
+    <fixed-repeat>
+     signature: repeat ( [<positive-integer> ], [ <line-names>? <track-size> ]+ <line-names>? )
+     
+     
+    <auto-repeat>
+    signature : repeat( [auto-fill | auto-fit] , [ <line-names>? <fixed-size> ]+ <line-names>? )
+    
+    auto-fill: generate as many columns to fit availble space  without causing grid to overflow
+    auto-fit: above + collapse any empty repeated tracks which means size is 0px
+    
+    
+}
 
+.grid-template-area{
+    
+    signauture:
+    none | <string>+
+    
+    :none: no named grid areas or grid tracks
+    
+    :<string>+ :  each word or char creats a column each seperate string creates a row
+        then assign css to the grid area items
+    file:gridTemplateArea.html
+    
 }
