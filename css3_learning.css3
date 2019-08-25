@@ -599,3 +599,22 @@ css flexbox{
     file:flexAlignContent.html
     
 }
+
+#Flex-Items-Properties{
+    order: every item gets 0, if someone gets 1 they are put after everthing;
+            its document order than source order 1st
+        screen readers dont take acct for this
+        
+    @{} they go in the flex item properties
+}
+
+.align-self{
+    signature: auto | flex-start | flex-end | center | baseline | stretch
+    auto: default, based on align-items prop
+    flex-start :item goes to cross-start of the line
+    flex-end:   item goes to cross-end
+    center:    The flex item’s margin box is centered in the cross axis within the line
+    baseline: a lot of cool stuff
+    stretch:its stretch from cross-start to cross-end while respecting the constranints of min-height min-width
+    
+}
