@@ -19,10 +19,6 @@ addi ass a css property is when you dont know how to descible what yr learning
 
 https://tympanus.net/codrops/css_reference/grid/
 
-https://tympanus.net/codrops/css_reference/flexbox/
-
-
-
 
 css grid{}
 
@@ -466,3 +462,116 @@ grid container defining grid sturcture{
     Chrome: 75
     Firefox: 67
 }
+
+
+
+#Takeaways{
+    everything always starts with 1
+}
+
+
+https://tympanus.net/codrops/css_reference/flexbox/
+
+
+css flexbox{
+    
+    synopsis: there are 4 layouts
+                block  :    designed for laying out documents, and that lays elements on a page vertically
+                inline :    text horizontally inside block-level container
+                table  :    2d data in a tabular format
+                positioned: explicit position without regard to other document structures
+                
+    flexbox: similar to block lauyout has more flexibility for distributing space that complex apps need
+                very adaptive stuff
+                can change visual order without changing source order
+}
+
+
+#A-Flexible-Container{
+    start: make a flex container
+    
+    ex:
+        .flex-container {
+            display: flex;
+        }
+        /* or */
+        .flex-container {
+            display: inline-flex;
+        }
+    
+    @{} no elements outside a flexbox are affected by it, affected only by direct descendants
+}
+
+#Concepts-and-Terminology{
+    flex-axis:items will be placed in the main axis or cross axis
+    
+    main-axis: where your flex items go it extends in the main direction
+    placed in main-start side and head toward main end side
+    main-size: the length that is the main dimension
+    cross-axis: axis perpendencular to the main
+    flex-lines:filled with items start on cross-start. cross-end
+    
+    @{}if u dont understand go over the section agagin
+    
+    
+}
+
+
+
+#Flex-Lines{
+    depends on flex-wrap proper
+    single-line: puts all children in one line even though it might overflow
+    multi-line : works like word wrap;
+    
+}
+
+#Writing-Modes{
+
+}
+
+
+#Flexbox Properties: Flex Container {
+    flex-direction
+    signature:  row | row-reverse | column | column-revers
+    specifies how  flex items are placed
+    row:  horizontal left to right
+    row-reverse :  horizontal right to left
+    column :   vertical left to right
+    column-reverse : vertical right to left;
+    
+    @{} paint speech and sequential order are not affects
+    
+    flex items will remain on that single line even if they overflow the line
+    
+}
+
+.flex-wrap{
+    signature: nowrap | wrap | wrap-reverse
+    nowrap:       all items are laid out on the flex line
+    wrap:         flex items will wrap onto additional flex lines
+    wrap-reverse :same as wrap but its all reverse
+    
+    file flexDirection.html
+    
+    @{} so wrap is from top left down wrap-reverse is bottom left up
+}
+
+
+.flex-flow{
+    signature:  <'flex-direction'> <'flex-wrap'>
+    desc: short for setting flex flow and flex property
+    
+    @ in english the same parameters can have 2 different values
+}
+
+.justify-content{
+    signature: flex-start | flex-end | center | space-between | space-around
+    flex-start    : default flex values are packed to the start of the  line
+    flex-end      : packed toward the end of the line
+    center        : everything packed to center with starts and end packed all to the middle
+    space-between :flex items are evenly distributed in the line, if there is one the val is equal to flex-start
+    space-around  :half sized spaces on either end, if theres one the val is equal to center
+    
+    file:flexjustifyContent.html
+}
+                

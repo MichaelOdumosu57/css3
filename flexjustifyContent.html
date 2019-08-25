@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <style>
+            body {
+              background-color: #F5F5F5;
+              color: #555;
+              font-size: 1.1em;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+            
+            .container {
+              margin: 150px auto;
+              width: 840px;
+              padding: 20px;
+              -webkit-display: -webkit-box;
+              -webkit-display: -webkit-flex;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              background-color: #594255;
+            }
+            
+            .item {
+              background-color: #fff;
+              width: 100px;
+              height: 100px;
+              margin: 1%;
+              text-align: center;
+              line-height: 100px;
+              font-weight: bold;
+              font-family: sans-serif;
+              font-size: 6em;
+              color: #594255;
+            }
+            
+            .big {
+              width: 150px;
+            }
+            
+            .controls {
+              background-color: white;
+              width: 300px;
+              padding: 20px;
+              line-height: 150%;
+              position: fixed;
+              top: 0;
+              right: 0;
+              border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="container">
+          <div class="item big">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item big">4</div>
+          <div class="item">5</div>
+        </div>
+        <div class="controls">
+  <input type="radio" name="justify-content" id="flex-start"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitJustifyContent = 'flex-start';
+                  container.style.justifyContent = 'flex-start';
+                  " checked>
+  <label for="flex-start">justify-content: flex-start;</label>
+  <br>
+  <input type="radio" name="justify-content" id="flex-end"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitJustifyContent = 'flex-end';
+                  container.style.justifyContent = 'flex-end';
+                  ">
+  <label for="flex-end">justify-content: flex-end;</label>
+  <br>
+  <input type="radio" name="justify-content" id="center"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitJustifyContent = 'center';
+                  container.style.justifyContent = 'center';
+                  ">
+  <label for="center">justify-content: center;</label>
+  <br>
+  <input type="radio" name="justify-content" id="space-between"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitJustifyContent = 'space-between';
+                  container.style.justifyContent = 'space-between';
+                  ">
+  <label for="space-between">justify-content: space-between;</label>
+  <br>
+  <input type="radio" name="justify-content" id="space-around"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitJustifyContent = 'space-around';
+                  container.style.justifyContent = 'space-around';
+                  ">
+  <label for="space-around">justify-content: space-around;</label>
+</div>
+    </body>
+</html>
+
+

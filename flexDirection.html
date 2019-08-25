@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+            body {
+              background-color: #F5F5F5;
+              color: #555;
+              font-size: 1.1em;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+            
+            hr {
+              margin: 50px 0;
+            }
+            
+            .container {
+              margin: 150px auto;
+              max-width: 800px;
+              padding: 20px;
+              -webkit-display: -webkit-box;
+              -webkit-display: -webkit-flex;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              background-color: #594255;
+            }
+            
+            .item {
+              background-color: #fff;
+              width: 100px;
+              height: 100px;
+              margin: 2px;
+              text-align: center;
+              line-height: 100px;
+              font-weight: bold;
+              font-family: sans-serif;
+              font-size: 5em;
+              color: #594255;
+            }
+            
+            .controls {
+              background-color: white;
+              width: 300px;
+              padding: 20px;
+              line-height: 150%;
+              /*position: fixed;/*/
+              /*top: 0;*/
+              /*right: 0;*/
+              border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="container" dir="rtl">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+        <div class="controls">
+  <input type="radio" name="flex-direction" id="row"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitFlexDirection = 'row';
+                  container.style.flexDirection = 'row';
+                  " checked>
+  <label for="row">flex-direction: row;</label>
+  <br>
+  <input type="radio" name="flex-direction" id="row-reverse"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitFlexDirection = 'row-reverse';
+                  container.style.flexDirection = 'row-reverse';
+                  ">
+  <label for="row-reverse">flex-direction: row-reverse;</label>
+  <br>
+  <input type="radio" name="flex-direction" id="column"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitFlexDirection = 'column';
+                  container.style.flexDirection = 'column';
+                  ">
+  <label for="column">flex-direction: column;</label>
+  <br>
+  <input type="radio" name="flex-direction" id="column-reverse"
+         onclick="
+                  var container=document.getElementById('container');
+                  container.style.WebkitFlexDirection = 'column-reverse';
+                  container.style.flexDirection = 'column-reverse';
+                  ">
+  <label for="column-reverse">flex-direction: column-reverse;</label>
+  <br>
+  <input type="radio" name="flex-direction" id="row-reverse"
+         onclick="
+                  var container=document.getElementById('container');
+                  
+                  container.style.flexWrap = 'nowrap';
+                  ">
+  <label for="row-reverse">flex-wrap: no-wrap;</label>
+  <br>
+  <input type="radio" name="flex-direction" id="column"
+         onclick="
+                  var container=document.getElementById('container');
+                  
+                  container.style.flexWrap = 'wrap';
+                  ">
+  <label for="column">flex-wrap: wrap;</label>
+  <br>
+  <input type="radio" name="flex-direction" id="column-reverse"
+         onclick="
+                  var container=document.getElementById('container');
+                  
+                  container.style.flexWrap = 'wrap-reverse';
+                  ">
+  <label for="column-reverse">flex-wrap: wrap-reverse;</label>
+</div>
+    </body>
+</html>
+
+
