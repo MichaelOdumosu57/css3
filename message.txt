@@ -1,1 +1,1 @@
-learned about grid alignment and how you can decide how your elements are layed out in the document or how text will be read, justify-content most deals with how grid tracks are spaced in the horizontal
+learned about the css of grid and grid item alignment

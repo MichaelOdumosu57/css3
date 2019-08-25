@@ -374,3 +374,60 @@ grid container defining grid sturcture{
     
     file:justifyContent.html
 }
+
+.align-content{
+    
+    signature :     center | start | end | space-between | space-around | space-evenly
+    problem:        sometime things dont look right
+    does same thing as justify-content but in the y-axis
+    
+    
+    
+}
+
+
+.justify-items{
+    signature :  center | start | end | stretch
+    strectch  :  fills grid items
+    center    :  justfies to center of grid area
+    start     :  moves to front
+    end       :  moves to back
+    
+    @{} this acutally goes in the grid container
+    
+    
+    file:justify-items.html
+}
+
+
+.align-items{
+    
+    @{}  same as justify-items but vertical
+    @{} goes in the grid contaier
+    
+    
+    
+}
+
+
+.justify-self{
+    signature : center | start | end | stretch
+    
+    stretch: fills grid area width
+    center:  aligns content in center
+    start :  puts left axis
+    end :    puts at right axis
+    
+    @{ } so unless the grid items have a size the other 3 items are useless
+    
+    file:justifySelf.html
+}
+
+.align-self{
+    signature: center | start | end | stretch
+    
+    same as above but in the y-axis
+}
+
+
+

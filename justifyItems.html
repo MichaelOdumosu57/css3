@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(4,[foo] 150px ) ;
+                grid-template-rows:repeat(5, [foo] 150px [bar] 75px);
+                justify-items: center;
+                
+            }
+            
+            .grid__item{
+                width:75px;
+                height:75px;
+            }
+            
+            .a {
+                
+                background-color:green;
+            }
+            
+            .b {
+                
+                background-color:red;
+            }
+            
+            .c {
+                
+                background-color:blue;
+            }
+            
+            .d {
+                
+                background-color:yellow;
+            }
+            
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="grid-container" style ="width:1000px; height:800px;">
+            <div class="grid__item a"><div class=""></div>Here is some text. Text is inline.</div>
+            <div class="grid__item b"><div class=""></div>Here is some text. Text is inline.</div>
+            <div class="grid__item c"><div class=""></div>Here is some text. Text is inline.</div>
+            <div class="grid__item d"><div class=""></div>Here is some text. Text is inline.</div>
+        </div>
+    </body>
+</html>
+
+
