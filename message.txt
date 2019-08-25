@@ -1,1 +1,1 @@
-learned about the css of grid and grid item alignment
+learned about browser support and compatablilty as well as visualizing responsive ness with a css grid

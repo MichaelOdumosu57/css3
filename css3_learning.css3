@@ -431,3 +431,38 @@ grid container defining grid sturcture{
 
 
 
+#A-Responsive-App-Using-Grid{
+    
+    file:responsiveGridApp.html
+}
+
+#Support{
+    
+    @the grids in IE10 && IE11 were added to early some features may not work
+}
+
+.desktop{
+    chrome:58;
+    firefox: 54;
+    IE : no
+    edge: 16;
+    Opera: 44
+    Safari: 10
+    
+    
+    @{} firefox  From version 40 until version 59 (exclusive): this feature is behind the layout.css.grid.enabled preference (needs to be set to true). To change preferences in Firefox, visit about:config.
+    
+    @{} chrome mobile  From version 40 until version 59 (exclusive): this feature is behind the layout.css.grid.enabled preference (needs to be set to true). To change preferences in Firefox, visit about:config.
+    
+    @{}  From version 28: this feature is behind the Enable experimental Web Platform features preference.
+    
+}
+
+.mobile:{
+    
+    apple:10
+    andriod: 67
+    Opera: no
+    Chrome: 75
+    Firefox: 67
+}
