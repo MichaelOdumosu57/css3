@@ -616,5 +616,63 @@ css flexbox{
     center:    The flex item’s margin box is centered in the cross axis within the line
     baseline: a lot of cool stuff
     stretch:its stretch from cross-start to cross-end while respecting the constranints of min-height min-width
+    file:flexAlignSelf.html;
+}
+
+.flex-grow{
+    signature: <number>
+    desc: bascially  you control how much an item can grow in realtion to the other items in the main-axis, it goes by a proprotion
+    and they all grow relative to one another
+    file: flexGrow.html
+}
+
+.flex-shrink{
+    signature:
+    shrink flex items in relation one to another
+    file: flexShrink.html
+    @{} when the items are too big you can actually break the flex container
+}
+
+.flex-basis{
+    desc: controls the width of single flex-items before they grow or shrink
+    @{} this can break also
+    signature : auto | <'width'>
+                
+}
+
+.flex{
+    signature none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    default :   0 auto / flex: initial
+    auto : 1 1 auto, the flex items absorb any free space
+    <positive-number>:  flex: <positive-number> 1 0%, make items flexible and set flex basis to 0
     
 }
+
+
+@{} by default flex items wont shrink beyond min-size which is the length of the longest word, to change set the min-width or min-height property
+
+#Compatability-Table{}
+
+.Desktop{
+    chrome:29
+    firefox:28
+    ie: 11 /partial Support
+    opera:12
+    safari: 9
+}
+
+.mobile{
+    apple 9.0
+    andriod 4.4
+    opera:all
+    chrome:75;
+    firefox:76
+}
+
+
+
+
+https://tachyons.io/
+
+
+tachyions.io
