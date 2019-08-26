@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <style>
+        .my-color{
+            background-color:green;
+        }
+        
+        .grid-container{
+            display:grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: 200px;
+            grid-gap:30px;
+        }
+    </style>
+    <body>
+        
+    <!--<div class = 'grid-container'>-->
+        <p class = 'dib v-base'  >Here is some text I need to write</p>
+        <p class = 'dib v-mid'  >Here is some text I need to write</p>
+        <p class = 'dib v-top'  >Here is some text I need to write</p>
+        <p class = 'dib v-btm'  >Here is some text I need to write</p>
+    <!--</div>-->
+
+    <script>
+        document.querySelectorAll('div').forEach((a,b)=>{
+            console.log(a)
+            a.style.width = Number(   Math.floor(Math.random() * Math.floor(   200   ))   ).toString() + "px"
+            a.style.height = Number(   Math.floor(Math.random() * Math.floor(   200   ))   ).toString() + "px"
+        })
+    </script>
+    </body>
+</html>
