@@ -4354,3 +4354,119 @@ bg-animate hover-bg-red
 .o-025 { opacity: .025; }
 .o-0   { opacity: 0; }
 }
+
+
+
+#images{
+    
+    preserve aspect ratio:to avoid image stretching using max witdth instead, however if its container is greater than the img width it will not fill
+}
+
+
+#links{
+    
+    /*
+
+   LINKS
+   Docs: http://tachyons.io/docs/elements/links/
+    
+    */
+    
+    .link {
+      text-decoration: none;
+      transition: color .15s ease-in;
+    }
+    
+    .link:link,
+    .link:visited {
+      transition: color .15s ease-in;
+    }
+    .link:hover   {
+      transition: color .15s ease-in;
+    }
+    .link:active  {
+      transition: color .15s ease-in;
+    }
+    .link:focus   {
+      transition: color .15s ease-in;
+      outline: 1px dotted currentColor;
+    }
+}
+
+#lists{
+    desc:only removes bullets
+    /*
+
+   LISTS
+   http://tachyons.io/docs/elements/lists/
+
+    */
+    
+    .list {         list-style-type: none; }
+    
+
+}
+
+
+#forms{
+    to remove default appearnces from forms on mobile devices
+    
+    /*
+    
+       FORMS
+       
+    */
+    
+    .input-reset {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    
+    .button-reset::-moz-focus-inner,
+    .input-reset::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+}
+
+
+#tables{
+    
+    /*
+    
+      TABLES
+      Docs: http://tachyons.io/docs/elements/tables/
+    
+    */
+    
+    .collapse {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    .striped--light-silver:nth-child(odd) {
+      background-color: var(--light-silver);
+    }
+    
+    .striped--moon-gray:nth-child(odd) {
+      background-color: var(--moon-gray);
+    }
+    
+    .striped--light-gray:nth-child(odd) {
+      background-color: var(--light-gray);
+    }
+    
+    .striped--near-white:nth-child(odd) {
+      background-color: var(--near-white);
+    }
+    
+    .stripe-light:nth-child(odd) {
+      background-color: var(--white-10);
+    }
+    
+    .stripe-dark:nth-child(odd) {
+      background-color: var(--black-10);
+    }
+
+
+}
