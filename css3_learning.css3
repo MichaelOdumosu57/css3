@@ -3419,3 +3419,938 @@ file: widths.html
 @custom-media --breakpoint-large screen and (min-width: 64em);
 
 }
+
+#skins{
+    tachyions provide plenty of color combos to get the job done
+    
+    use any combo of skins
+}
+
+#skin-animation{
+    customize an element when hoevered or focused over
+    
+    /*
+  
+   SKINS:PSEUDO
+
+   Customize the color of an element when
+   it is focused or hovered over.
+ 
+ */
+
+
+for text color
+
+
+hover-red
+<a href="#" class="link b black hover-red">hover-red</a>
+
+for background-color
+
+bg-animate hover-bg-red
+<a href="#" class="link b black pv2 db bg-animate hover-bg-red">bg-animate hover-bg-red</a>
+
+
+.hover-black:hover,
+.hover-black:focus { color: var(--black); }
+.hover-near-black:hover,
+.hover-near-black:focus { color: var(--near-black); }
+.hover-dark-gray:hover,
+.hover-dark-gray:focus { color: var(--dark-gray); }
+.hover-mid-gray:hover,
+.hover-mid-gray:focus { color: var(--mid-gray); }
+.hover-gray:hover,
+.hover-gray:focus { color: var(--gray); }
+.hover-silver:hover,
+.hover-silver:focus { color: var(--silver); }
+.hover-light-silver:hover,
+.hover-light-silver:focus { color: var(--light-silver); }
+.hover-moon-gray:hover,
+.hover-moon-gray:focus { color: var(--moon-gray); }
+.hover-light-gray:hover,
+.hover-light-gray:focus { color: var(--light-gray); }
+.hover-near-white:hover,
+.hover-near-white:focus { color: var(--near-white); }
+.hover-white:hover,
+.hover-white:focus { color: var(--white); }
+
+.hover-bg-black:hover,
+.hover-bg-black:focus { background-color: var(--black); }
+.hover-bg-near-black:hover,
+.hover-bg-near-black:focus { background-color: var(--near-black); }
+.hover-bg-dark-gray:hover,
+.hover-bg-dark-gray:focus { background-color: var(--dark-gray); }
+.hover-bg-dark-gray:focus,
+.hover-bg-mid-gray:hover { background-color: var(--mid-gray); }
+.hover-bg-gray:hover,
+.hover-bg-gray:focus { background-color: var(--gray); }
+.hover-bg-silver:hover,
+.hover-bg-silver:focus { background-color: var(--silver); }
+.hover-bg-light-silver:hover,
+.hover-bg-light-silver:focus { background-color: var(--light-silver); }
+.hover-bg-moon-gray:hover,
+.hover-bg-moon-gray:focus { background-color: var(--moon-gray); }
+.hover-bg-light-gray:hover,
+.hover-bg-light-gray:focus { background-color: var(--light-gray); }
+.hover-bg-near-white:hover,
+.hover-bg-near-white:focus { background-color: var(--near-white); }
+.hover-bg-white:hover,
+.hover-bg-white:focus { background-color: var(--white); }
+.hover-bg-transparent:hover,
+.hover-bg-transparent:focus { background-color: var(--transparent); }
+
+.hover-dark-red:hover,
+.hover-dark-red:focus { color: var(--dark-red); }
+.hover-red:hover,
+.hover-red:focus { color: var(--red); }
+.hover-light-red:hover,
+.hover-light-red:focus { color: var(--light-red); }
+.hover-orange:hover,
+.hover-orange:focus { color: var(--orange); }
+.hover-gold:hover,
+.hover-gold:focus { color: var(--gold); }
+.hover-yellow:hover,
+.hover-yellow:focus { color: var(--yellow); }
+.hover-light-yellow:hover,
+.hover-light-yellow:focus { color: var(--light-yellow); }
+.hover-purple:hover,
+.hover-purple:focus { color: var(--purple); }
+.hover-light-purple:hover,
+.hover-light-purple:focus { color: var(--light-purple); }
+.hover-dark-pink:hover,
+.hover-dark-pink:focus { color: var(--dark-pink); }
+.hover-hot-pink:hover,
+.hover-hot-pink:focus { color: var(--hot-pink); }
+.hover-pink:hover,
+.hover-pink:focus { color: var(--pink); }
+.hover-light-pink:hover,
+.hover-light-pink:focus { color: var(--light-pink); }
+.hover-dark-green:hover,
+.hover-dark-green:focus { color: var(--dark-green); }
+.hover-green:hover,
+.hover-green:focus { color: var(--green); }
+.hover-light-green:hover,
+.hover-light-green:focus { color: var(--light-green); }
+.hover-navy:hover,
+.hover-navy:focus { color: var(--navy); }
+.hover-dark-blue:hover,
+.hover-dark-blue:focus { color: var(--dark-blue); }
+.hover-blue:hover,
+.hover-blue:focus { color: var(--blue); }
+.hover-light-blue:hover,
+.hover-light-blue:focus { color: var(--light-blue); }
+.hover-lightest-blue:hover,
+.hover-lightest-blue:focus { color: var(--lightest-blue); }
+.hover-washed-blue:hover,
+.hover-washed-blue:focus { color: var(--washed-blue); }
+.hover-washed-green:hover,
+.hover-washed-green:focus { color: var(--washed-green); }
+.hover-washed-yellow:hover,
+.hover-washed-yellow:focus { color: var(--washed-yellow); }
+.hover-washed-red:hover,
+.hover-washed-red:focus { color: var(--washed-red); }
+
+.hover-bg-dark-red:hover,
+.hover-bg-dark-red:focus { background-color: var(--dark-red); }
+.hover-bg-red:hover,
+.hover-bg-red:focus { background-color: var(--red); }
+.hover-bg-light-red:hover,
+.hover-bg-light-red:focus { background-color: var(--light-red); }
+.hover-bg-orange:hover,
+.hover-bg-orange:focus { background-color: var(--orange); }
+.hover-bg-gold:hover,
+.hover-bg-gold:focus { background-color: var(--gold); }
+.hover-bg-yellow:hover,
+.hover-bg-yellow:focus { background-color: var(--yellow); }
+.hover-bg-light-yellow:hover,
+.hover-bg-light-yellow:focus { background-color: var(--light-yellow); }
+.hover-bg-purple:hover,
+.hover-bg-purple:focus { background-color: var(--purple); }
+.hover-bg-light-purple:hover,
+.hover-bg-light-purple:focus { background-color: var(--light-purple); }
+.hover-bg-dark-pink:hover,
+.hover-bg-dark-pink:focus { background-color: var(--dark-pink); }
+.hover-bg-hot-pink:hover,
+.hover-bg-hot-pink:focus { background-color: var(--hot-pink); }
+.hover-bg-pink:hover,
+.hover-bg-pink:focus { background-color: var(--pink); }
+.hover-bg-light-pink:hover,
+.hover-bg-light-pink:focus { background-color: var(--light-pink); }
+.hover-bg-dark-green:hover,
+.hover-bg-dark-green:focus { background-color: var(--dark-green); }
+.hover-bg-green:hover,
+.hover-bg-green:focus { background-color: var(--green); }
+.hover-bg-light-green:hover,
+.hover-bg-light-green:focus { background-color: var(--light-green); }
+.hover-bg-navy:hover,
+.hover-bg-navy:focus { background-color: var(--navy); }
+.hover-bg-dark-blue:hover,
+.hover-bg-dark-blue:focus { background-color: var(--dark-blue); }
+.hover-bg-blue:hover,
+.hover-bg-blue:focus { background-color: var(--blue); }
+.hover-bg-light-blue:hover,
+.hover-bg-light-blue:focus { background-color: var(--light-blue); }
+.hover-bg-lightest-blue:hover,
+.hover-bg-lightest-blue:focus { background-color: var(--lightest-blue); }
+.hover-bg-washed-blue:hover,
+.hover-bg-washed-blue:focus { background-color: var(--washed-blue); }
+.hover-bg-washed-green:hover,
+.hover-bg-washed-green:focus { background-color: var(--washed-green); }
+.hover-bg-washed-yellow:hover,
+.hover-bg-washed-yellow:focus { background-color: var(--washed-yellow); }
+.hover-bg-washed-red:hover,
+.hover-bg-washed-red:focus { background-color: var(--washed-red); }
+
+
+}
+
+
+#hovers{
+    
+    to dim text on hover
+    <a href="#" class="link dim black b">link text</a>
+    
+    
+    to dim whole elements
+    <a href="#" class="link black dim db mw5 pa2 br2 ba b--black-10 shadow-1">
+      <img src="http://mrmrs.github.io/photos/037.jpg" alt="SF at night" class="db mb2 mw-100" />
+      <span class="db f6 pv2">Card title</span>
+    </a>
+    
+    
+    
+    to reveal children on hover
+    
+    <a href="#" style="background-image: url(http://mrmrs.github.io/images/0010.jpg);
+          class="link mw5 dt hide-child br2 cover bg-center" ">
+      <span class="white dtc v-mid w-100 h-100 child bg-black-40 pa5">
+        Card title
+      </span>
+    </a>
+    
+    
+    
+    add pointer on hover
+
+    <div href="#" class="link dim black mw5 dt hide-child ba b--black-20 pa4 br2 pointer">
+      Add pointer on hover to element.
+    </div>
+    
+    
+    grow to 1.05 on hover
+    
+    <a class="grow dib f3-ns no-underline bg-pink black-90 pa5" href="#">
+        Portfolio Project #11
+    </a>
+    
+    
+
+  HOVER EFFECTS
+  Docs: http://tachyons.io/docs/themes/hovers/
+
+    - Dim
+    - Glow
+    - Hide Child
+    - Underline text
+    - Grow
+    - Pointer
+    - Shadow
+
+*/
+
+/*
+
+  Dim element on hover by adding the dim class.
+
+*/
+.dim {
+  opacity: 1;
+  transition: opacity .15s ease-in;
+}
+.dim:hover,
+.dim:focus {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+}
+.dim:active {
+  opacity: .8; transition: opacity .15s ease-out;
+}
+
+/*
+
+  Animate opacity to 100% on hover by adding the glow class.
+
+*/
+.glow {
+  transition: opacity .15s ease-in;
+}
+.glow:hover,
+.glow:focus {
+  opacity: 1;
+  transition: opacity .15s ease-in;
+}
+
+/*
+
+  Hide child & reveal on hover:
+
+  Put the hide-child class on a parent element and any nested element with the
+  child class will be hidden and displayed on hover or focus.
+
+  
+
+    
+ Hidden until hover or focus
+
+    
+ Hidden until hover or focus
+
+    
+ Hidden until hover or focus
+
+    
+ Hidden until hover or focus
+
+  
+
+*/
+
+.hide-child .child {
+  opacity: 0;
+  transition: opacity .15s ease-in;
+}
+.hide-child:hover  .child,
+.hide-child:focus  .child,
+.hide-child:active .child {
+  opacity: 1;
+  transition: opacity .15s ease-in;
+}
+
+.underline-hover:hover,
+.underline-hover:focus {
+  text-decoration: underline;
+}
+
+/* Can combine this with overflow-hidden to make background images grow on hover
+ * even if you are using background-size: cover */
+
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+}
+
+.grow:active {
+  transform: scale(.90);
+}
+
+.grow-large {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform .25s ease-in-out;
+}
+
+.grow-large:hover,
+.grow-large:focus {
+  transform: scale(1.2);
+}
+
+.grow-large:active {
+  transform: scale(.95);
+}
+
+/* Add pointer on hover */
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+/*
+   Add shadow on hover.
+
+   Performant box-shadow animation pattern from
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
+*/
+
+.shadow-hover {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-hover::after {
+  content: '';
+  box-shadow: 0px 0px 16px 2px rgba( 0, 0, 0, .2 );
+  border-radius: inherit;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shadow-hover:hover::after,
+.shadow-hover:focus::after {
+  opacity: 1;
+}
+
+/* Combine with classes in skins and skins-pseudo for
+ * many different transition possibilities. */
+
+.bg-animate,
+.bg-animate:hover,
+.bg-animate:focus {
+  transition: background-color .15s ease-in-out;
+}
+    
+}
+
+
+#backgroud-size{
+    affects how images fill their containing elements
+    contain - makes sure entire element is display regardless of dimensions
+    cover- make sure element is covered, but does not show entire image
+    
+    /*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+    
+    */
+    
+    /*
+      Often used in combination with background image set as an inline style
+      on an html element.
+    */
+    
+      .cover { background-size: cover!important; }
+      .contain { background-size: contain!important; }
+    
+    @media (--breakpoint-not-small) {
+      .cover-ns { background-size: cover!important; }
+      .contain-ns { background-size: contain!important; }
+    }
+    
+    @media (--breakpoint-medium) {
+      .cover-m { background-size: cover!important; }
+      .contain-m { background-size: contain!important; }
+    }
+    
+    @media (--breakpoint-large) {
+      .cover-l { background-size: cover!important; }
+      .contain-l { background-size: contain!important; }
+    }
+
+}
+
+
+#border{
+    desc: by default dont set a border color it will inherit the text color for the DOM node
+    
+    /*
+    
+        BORDERS
+        Docs: http://tachyons.io/docs/themes/borders/
+    
+        Base:
+          b = border
+    
+        Modifiers:
+          a = all
+          t = top
+          r = right
+          b = bottom
+          l = left
+          n = none
+    
+       Media Query Extensions:
+         -ns = not-small
+         -m  = medium
+         -l  = large
+    
+    */
+    
+      .ba { border-style: solid; border-width: 1px; }
+      .bt { border-top-style: solid; border-top-width: 1px; }
+      .br { border-right-style: solid; border-right-width: 1px; }
+      .bb { border-bottom-style: solid; border-bottom-width: 1px; }
+      .bl { border-left-style: solid; border-left-width: 1px; }
+      .bn { border-style: none; border-width: 0; }
+    
+    
+    @media (--breakpoint-not-small) {
+      .ba-ns { border-style: solid; border-width: 1px; }
+      .bt-ns { border-top-style: solid; border-top-width: 1px; }
+      .br-ns { border-right-style: solid; border-right-width: 1px; }
+      .bb-ns { border-bottom-style: solid; border-bottom-width: 1px; }
+      .bl-ns { border-left-style: solid; border-left-width: 1px; }
+      .bn-ns { border-style: none; border-width: 0; }
+    }
+    
+    @media (--breakpoint-medium) {
+      .ba-m { border-style: solid; border-width: 1px; }
+      .bt-m { border-top-style: solid; border-top-width: 1px; }
+      .br-m { border-right-style: solid; border-right-width: 1px; }
+      .bb-m { border-bottom-style: solid; border-bottom-width: 1px; }
+      .bl-m { border-left-style: solid; border-left-width: 1px; }
+      .bn-m { border-style: none; border-width: 0; }
+    }
+    
+    @media (--breakpoint-large) {
+      .ba-l { border-style: solid; border-width: 1px; }
+      .bt-l { border-top-style: solid; border-top-width: 1px; }
+      .br-l { border-right-style: solid; border-right-width: 1px; }
+      .bb-l { border-bottom-style: solid; border-bottom-width: 1px; }
+      .bl-l { border-left-style: solid; border-left-width: 1px; }
+      .bn-l { border-style: none; border-width: 0; }
+    }
+    
+    
+    
+    src/_border-style.css
+    
+    /*
+    
+       BORDER STYLES
+       Docs: http://tachyons.io/docs/themes/borders/
+    
+       Depends on base border module in _borders.css
+    
+       Base:
+         b = border-style
+    
+       Modifiers:
+         --none   = none
+         --dotted = dotted
+         --dashed = dashed
+         --solid  = solid
+    
+       Media Query Extensions:
+         -ns = not-small
+         -m  = medium
+         -l  = large
+    
+     */
+    
+    .b--dotted { border-style: dotted; }
+    .b--dashed { border-style: dashed; }
+    .b--solid {  border-style: solid; }
+    .b--none {   border-style: none; }
+    
+    @media (--breakpoint-not-small) {
+      .b--dotted-ns { border-style: dotted; }
+      .b--dashed-ns { border-style: dashed; }
+      .b--solid-ns {  border-style: solid; }
+      .b--none-ns {   border-style: none; }
+    }
+    
+    @media (--breakpoint-medium) {
+      .b--dotted-m { border-style: dotted; }
+      .b--dashed-m { border-style: dashed; }
+      .b--solid-m {  border-style: solid; }
+      .b--none-m {   border-style: none; }
+    }
+    
+    @media (--breakpoint-large) {
+      .b--dotted-l { border-style: dotted; }
+      .b--dashed-l { border-style: dashed; }
+      .b--solid-l {  border-style: solid; }
+      .b--none-l {   border-style: none; }
+    }
+    
+    
+    src/_border-colors.css
+    
+    /*
+    
+       BORDER COLORS
+       Docs: http://tachyons.io/docs/themes/borders/
+    
+       Border colors can be used to extend the base
+       border classes ba,bt,bb,br,bl found in the _borders.css file.
+    
+       The base border class by default will set the color of the border
+       to that of the current text color. These classes are for the cases
+       where you desire for the text and border colors to be different.
+    
+       Base:
+         b = border
+    
+       Modifiers:
+       --color-name = each color variable name is also a border color name
+    
+    */
+    
+    .b--black {        border-color: var(--black); }
+    .b--near-black {   border-color: var(--near-black); }
+    .b--dark-gray {    border-color: var(--dark-gray); }
+    .b--mid-gray {     border-color: var(--mid-gray); }
+    .b--gray {         border-color: var(--gray); }
+    .b--silver {       border-color: var(--silver); }
+    .b--light-silver { border-color: var(--light-silver); }
+    .b--moon-gray {    border-color: var(--moon-gray); }
+    .b--light-gray {   border-color: var(--light-gray); }
+    .b--near-white {   border-color: var(--near-white); }
+    .b--white {        border-color: var(--white); }
+    
+    .b--white-90 {   border-color: var(--white-90); }
+    .b--white-80 {   border-color: var(--white-80); }
+    .b--white-70 {   border-color: var(--white-70); }
+    .b--white-60 {   border-color: var(--white-60); }
+    .b--white-50 {   border-color: var(--white-50); }
+    .b--white-40 {   border-color: var(--white-40); }
+    .b--white-30 {   border-color: var(--white-30); }
+    .b--white-20 {   border-color: var(--white-20); }
+    .b--white-10 {   border-color: var(--white-10); }
+    .b--white-05 {   border-color: var(--white-05); }
+    .b--white-025 {   border-color: var(--white-025); }
+    .b--white-0125 {   border-color: var(--white-0125); }
+    
+    .b--black-90 {   border-color: var(--black-90); }
+    .b--black-80 {   border-color: var(--black-80); }
+    .b--black-70 {   border-color: var(--black-70); }
+    .b--black-60 {   border-color: var(--black-60); }
+    .b--black-50 {   border-color: var(--black-50); }
+    .b--black-40 {   border-color: var(--black-40); }
+    .b--black-30 {   border-color: var(--black-30); }
+    .b--black-20 {   border-color: var(--black-20); }
+    .b--black-10 {   border-color: var(--black-10); }
+    .b--black-05 {   border-color: var(--black-05); }
+    .b--black-025 {   border-color: var(--black-025); }
+    .b--black-0125 {   border-color: var(--black-0125); }
+    
+    .b--dark-red { border-color: var(--dark-red); }
+    .b--red { border-color: var(--red); }
+    .b--light-red { border-color: var(--light-red); }
+    .b--orange { border-color: var(--orange); }
+    .b--gold { border-color: var(--gold); }
+    .b--yellow { border-color: var(--yellow); }
+    .b--light-yellow { border-color: var(--light-yellow); }
+    .b--purple { border-color: var(--purple); }
+    .b--light-purple { border-color: var(--light-purple); }
+    .b--dark-pink { border-color: var(--dark-pink); }
+    .b--hot-pink { border-color: var(--hot-pink); }
+    .b--pink { border-color: var(--pink); }
+    .b--light-pink { border-color: var(--light-pink); }
+    .b--dark-green { border-color: var(--dark-green); }
+    .b--green { border-color: var(--green); }
+    .b--light-green { border-color: var(--light-green); }
+    .b--navy { border-color: var(--navy); }
+    .b--dark-blue { border-color: var(--dark-blue); }
+    .b--blue { border-color: var(--blue); }
+    .b--light-blue { border-color: var(--light-blue); }
+    .b--lightest-blue { border-color: var(--lightest-blue); }
+    .b--washed-blue { border-color: var(--washed-blue); }
+    .b--washed-green { border-color: var(--washed-green); }
+    .b--washed-yellow { border-color: var(--washed-yellow); }
+    .b--washed-red { border-color: var(--washed-red); }
+    
+    .b--transparent { border-color: var(--transparent); }
+    .b--inherit { border-color: inherit; }
+    
+    
+    src/_border-widths.css
+    
+    /*
+    
+       BORDER WIDTHS
+       Docs: http://tachyons.io/docs/themes/borders/
+    
+       Base:
+         bw = border-width
+    
+       Modifiers:
+         0 = 0 width border
+         1 = 1st step in border-width scale
+         2 = 2nd step in border-width scale
+         3 = 3rd step in border-width scale
+         4 = 4th step in border-width scale
+         5 = 5th step in border-width scale
+    
+       Media Query Extensions:
+         -ns = not-small
+         -m  = medium
+         -l  = large
+    
+    */
+    
+    .bw0 { border-width: 0; }
+    .bw1 { border-width: .125rem; }
+    .bw2 { border-width: .25rem; }
+    .bw3 { border-width: .5rem; }
+    .bw4 { border-width: 1rem; }
+    .bw5 { border-width: 2rem; }
+    
+    /* Resets */
+    .bt-0 { border-top-width: 0; }
+    .br-0 { border-right-width: 0; }
+    .bb-0 { border-bottom-width: 0; }
+    .bl-0 { border-left-width: 0; }
+    
+    @media (--breakpoint-not-small) {
+      .bw0-ns { border-width: 0; }
+      .bw1-ns { border-width: .125rem; }
+      .bw2-ns { border-width: .25rem; }
+      .bw3-ns { border-width: .5rem; }
+      .bw4-ns { border-width: 1rem; }
+      .bw5-ns { border-width: 2rem; }
+      .bt-0-ns { border-top-width: 0; }
+      .br-0-ns { border-right-width: 0; }
+      .bb-0-ns { border-bottom-width: 0; }
+      .bl-0-ns { border-left-width: 0; }
+    }
+    
+    @media (--breakpoint-medium) {
+      .bw0-m { border-width: 0; }
+      .bw1-m { border-width: .125rem; }
+      .bw2-m { border-width: .25rem; }
+      .bw3-m { border-width: .5rem; }
+      .bw4-m { border-width: 1rem; }
+      .bw5-m { border-width: 2rem; }
+      .bt-0-m { border-top-width: 0; }
+      .br-0-m { border-right-width: 0; }
+      .bb-0-m { border-bottom-width: 0; }
+      .bl-0-m { border-left-width: 0; }
+    }
+    
+    @media (--breakpoint-large) {
+      .bw0-l { border-width: 0; }
+      .bw1-l { border-width: .125rem; }
+      .bw2-l { border-width: .25rem; }
+      .bw3-l { border-width: .5rem; }
+      .bw4-l { border-width: 1rem; }
+      .bw5-l { border-width: 2rem; }
+      .bt-0-l { border-top-width: 0; }
+      .br-0-l { border-right-width: 0; }
+      .bb-0-l { border-bottom-width: 0; }
+      .bl-0-l { border-left-width: 0; }
+    }
+
+    
+    file border.html
+}
+
+
+#border-radius{
+    def: There is a four step scale for border radius in addition to a utility that sets border radius to 100%, which when combined with an explicit height and width will produce a circle.
+    
+    
+
+    /*
+    
+       BORDER RADIUS
+       Docs: http://tachyons.io/docs/themes/border-radius/
+    
+       Base:
+         br   = border-radius
+    
+       Modifiers:
+         0    = 0/none
+         1    = 1st step in scale
+         2    = 2nd step in scale
+         3    = 3rd step in scale
+         4    = 4th step in scale
+    
+       Literal values:
+         -100 = 100%
+         -pill = 9999px
+    
+       Media Query Extensions:
+         -ns = not-small
+         -m  = medium
+         -l  = large
+    
+    */
+    
+      .br0 {        border-radius: 0; }
+      .br1 {        border-radius: .125rem; }
+      .br2 {        border-radius: .25rem; }
+      .br3 {        border-radius: .5rem; }
+      .br4 {        border-radius: 1rem; }
+      .br-100 {     border-radius: 100%; }
+      .br-pill {    border-radius: 9999px; }
+      .br--bottom {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+      }
+      .br--top {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+      .br--right {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+      }
+      .br--left {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+    
+    @media (--breakpoint-not-small) {
+      .br0-ns {     border-radius: 0; }
+      .br1-ns {     border-radius: .125rem; }
+      .br2-ns {     border-radius: .25rem; }
+      .br3-ns {     border-radius: .5rem; }
+      .br4-ns {     border-radius: 1rem; }
+      .br-100-ns {  border-radius: 100%; }
+      .br-pill-ns { border-radius: 9999px; }
+      .br--bottom-ns {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+      }
+      .br--top-ns {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+      .br--right-ns {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+      }
+      .br--left-ns {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+    }
+    
+    @media (--breakpoint-medium) {
+      .br0-m {     border-radius: 0; }
+      .br1-m {     border-radius: .125rem; }
+      .br2-m {     border-radius: .25rem; }
+      .br3-m {     border-radius: .5rem; }
+      .br4-m {     border-radius: 1rem; }
+      .br-100-m {  border-radius: 100%; }
+      .br-pill-m { border-radius: 9999px; }
+      .br--bottom-m {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+      }
+      .br--top-m {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+      .br--right-m {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+      }
+      .br--left-m {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+    }
+    
+    @media (--breakpoint-large) {
+      .br0-l {     border-radius: 0; }
+      .br1-l {     border-radius: .125rem; }
+      .br2-l {     border-radius: .25rem; }
+      .br3-l {     border-radius: .5rem; }
+      .br4-l {     border-radius: 1rem; }
+      .br-100-l {  border-radius: 100%; }
+      .br-pill-l { border-radius: 9999px; }
+      .br--bottom-l {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+      }
+      .br--top-l {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+      .br--right-l {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+      }
+      .br--left-l {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+    }
+    
+}
+
+
+#box-shadow{
+    just five simple options
+        
+        /*
+    
+      BOX-SHADOW
+      Docs: http://tachyons.io/docs/themes/box-shadow/
+    
+      Media Query Extensions:
+       -ns = not-small
+       -m  = medium
+       -l  = large
+    
+     */
+    
+    .shadow-1 { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+    .shadow-2 { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+    .shadow-3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+    .shadow-4 { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+    .shadow-5 { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+    
+    @media (--breakpoint-not-small) {
+      .shadow-1-ns { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-2-ns { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-3-ns { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-4-ns { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-5-ns { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+    }
+    
+    @media (--breakpoint-medium) {
+      .shadow-1-m { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-2-m { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-3-m { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-4-m { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-5-m { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+    }
+    
+    @media (--breakpoint-large) {
+      .shadow-1-l { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-2-l { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-3-l { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-4-l { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+      .shadow-5-l { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }
+    }
+
+
+}
+
+
+#opacity{
+    
+    /*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+
+.o-100 { opacity: 1;    }
+.o-90  { opacity: .9;   }
+.o-80  { opacity: .8;   }
+.o-70  { opacity: .7;   }
+.o-60  { opacity: .6;   }
+.o-50  { opacity: .5;   }
+.o-40  { opacity: .4;   }
+.o-30  { opacity: .3;   }
+.o-20  { opacity: .2;   }
+.o-10  { opacity: .1;   }
+.o-05  { opacity: .05;  }
+.o-025 { opacity: .025; }
+.o-0   { opacity: 0; }
+}
